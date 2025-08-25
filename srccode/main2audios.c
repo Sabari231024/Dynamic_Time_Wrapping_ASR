@@ -10,8 +10,8 @@
 int main(int argc, char *argv[]) {
 double mfcc1[MAX_MFCC][DIM];
 double mfcc2[MAX_MFCC][DIM];
-int aud1len = readfile("Dataset/Train/ac_1.mfcc",mfcc1);
-int aud2len = readfile("Dataset/Train/ac_4.mfcc",mfcc2);
+int aud1len = readfile("ac_1.mfcc",mfcc1);
+int aud2len = readfile("mk_1.mfcc",mfcc2);
 if(aud1len<= 0 || aud2len <= 0){
 printf("Insufficient length to perform dtw");
 return -1;
